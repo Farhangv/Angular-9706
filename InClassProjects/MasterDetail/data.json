@@ -1,0 +1,56 @@
+{
+    "employees":[
+        {
+            "type":"employee",
+            "name":"رضا",
+            "family":"رضایی",
+            "birthDate": "۱۳۶۰/۰۷/۰۵",
+            "wage":2000000,
+            "workingHours":42,
+            "positions":["کارشناس ارشد فروش"],
+            "vacationHours":10,
+            "nationalCode": "۲۶۴۳۵۴۸۳۴۲"
+            
+        },
+        {
+            "type":"sales-employee",
+            "name":"پیام",
+            "family":"پیامی",
+            "birthDate": "۱۳۶۰/۰۷/۰۵",
+            "wage":1500000,
+            "workingHours":42,
+            "positions":["کارشناس فروش", "مدیر فروش"],
+            "vacationHours":10,
+            "nationalCode": "۰۰۴۳۵۴۸۳۴۲",
+            "totalSales":20000000,
+            "percentage":0.02
+            
+        },
+        {
+            "type":"sales-employee",
+            "name":"میترا",
+            "family":"میترایی",
+            "birthDate": "۱۳۶۰/۰۷/۰۵",
+            "wage":1500000,
+            "workingHours":42,
+            "positions":["کارشناس ارشد فروش"],
+            "vacationHours":10,
+            "nationalCode": "۲۰۰۳۵۴۸۳۴۲",
+            "totalSales":20000000,
+            "percentage":0.02
+            
+        },
+        {
+            "type":"employee",
+            "name":"نگار",
+            "family":"نگاری",
+            "birthDate": "۱۳۶۰/۰۷/۰۵",
+            "wage":1500000,
+            "workingHours":42,
+            "positions":["مدیر تولید"],
+            "vacationHours":10,
+            "nationalCode": "۲۶۴۳۵۴۵۳۴۲"
+       
+        }
+    ]
+}

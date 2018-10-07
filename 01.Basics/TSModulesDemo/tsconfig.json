@@ -1,0 +1,13 @@
+{
+    "compilerOptions":{
+        "target": "es5",
+        "sourceMap": true,
+        "module": "system",
+        "outDir": "./assets/js/",
+        "rootDir": "./src/"
+        
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
