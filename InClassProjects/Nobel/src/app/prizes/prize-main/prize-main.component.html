@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h2>{{pageTitle}}</h2>
+  </div>
+</div>
+<div class="row" style="border-top:1px solid #999; margin-top:30px; padding-top:15px;">
+  <div class="col-md-6 form-inline">
+    <input class="form-control" [(ngModel)] = "filterPhrase" />
+  </div>
+  <div class="col-md-6">
+  </div>
+</div>
+<div class = "row"  *ngIf = "filterPhrase && filterPhrase.length">
+  <div class="col-md-12">
+      <h4> فیلتر :  </h4>
+  </div>
+</div>
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+
+    <table
+      class="table table-responsive table-bordered table-stripped">
+      <thead>
+          <tr>
+              <th>سال</th>
+              <th>رشته</th>
+              <th>انگیزه</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+</div>
