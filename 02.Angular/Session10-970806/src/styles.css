@@ -1,0 +1,18 @@
+/*
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-rtl/dist/css/bootstrap-rtl.css";
+@import "~vazir-font/dist/font-face.css";
+*/
+/* You can add global styles to this file, and also import other style files */
+
+body{
+  direction: rtl;
+  font-family: Vazir;
+}
+#main {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.product-list-img{
+  width: 60px;
+}
