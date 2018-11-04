@@ -1,0 +1,41 @@
+<div class="col-md-4">
+  <img [src]="currentProduct?.imageUrl" />
+</div>
+<div class="col-md-8">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{currentProduct?.productName}}
+    </div>
+    <div class="panel-body">
+      <table class="table table-hover table striped">
+        <tbody>
+          <tr>
+            <th>کد محصول</th>
+            <td>{{currentProduct?.productCode}}</td>
+          </tr>
+          <tr>
+            <th>تاریخ ارائه</th>
+            <td>{{currentProduct?.releaseDate | persianDate }}</td>
+          </tr>
+          <tr>
+            <th>توضیحات</th>
+            <td><span appHighlight="#009987">{{currentProduct?.description}}</span></td>
+          </tr>
+          <tr>
+            <th>امتیاز</th>
+            <td>{{currentProduct?.starRating}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-default btn-sm" (click)="goBack()">
+            <span class="fa fa-chevron-right"></span>
+            بازگشت به لیست
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
