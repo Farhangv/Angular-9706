@@ -11,6 +11,7 @@
     <button class="btn btn-primary pull-left" (click)="toggleImage()">
       {{ showImage ? 'عدم نمایش' : 'نمایش ' }}  عکس
     </button>
+    <a [routerLink]="[ '/products/create']" class="btn btn-success pull-right">درج محصول جدید</a>
   </div>
 </div>
 <div class = "row"  *ngIf = "filterPhrase.length">
@@ -39,15 +40,15 @@
       <tbody>
         <tr *ngFor = "let product of filteredProducts">
 
-          <td>{{product.productCode | lowercase | productCode}}</td>
-          <td>{{product.productName}}</td>
-          <td>{{product.price}}</td>
-          <td><app-star-rating [rating] = "product.starRating" (ratingClicked) = "ratingClickHandler($event)"></app-star-rating></td>
-          <td>{{product.releaseDate | persianDate}}</td>
+          <td>{{product?.productCode | lowercase | productCode}}</td>
+          <td>{{product?.productName}}</td>
+          <td>{{product?.price}}</td>
+          <td><app-star-rating [rating] = "product?.starRating" (ratingClicked) = "ratingClickHandler($event)"></app-star-rating></td>
+          <td>{{product?.releaseDate | persianDate}}</td>
           <td *ngIf="showImage">
             <img class="img-thumbnail"
               [style.width.px] = 'imageWidth'
-              [src]="product.imageUrl"
+              [src]="product?.imageUrl"
             />
           </td>
           <td>

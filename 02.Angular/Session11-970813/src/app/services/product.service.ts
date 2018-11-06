@@ -11,7 +11,7 @@ export class ProductService {
 
   constructor(private client: HttpClient) { }
 
-  protected serverUrl: string = "http://localhost:3000/data";
+  protected serverUrl: string = "http://localhost:54682/api/products";
 
   getAllProducts():Observable<IProduct[]>
   {
@@ -35,11 +35,16 @@ export class ProductService {
 
   getProduct(id: number):Observable<IProduct>
   {
-    return this.client.get<IProduct[]>(`${this.serverUrl}?productId=${id}`)
+    return this.client.get<IProduct>(`${this.serverUrl}/${id}`)
       .pipe(
-        tap(data => console.log(data[0])),
-        map(data => <IProduct>data[0])
+        tap(data => console.log(data)),
+        map(data => <IProduct>data)
         );
+  }
+
+  addProduct(product: IProduct):Observable<IProduct>
+  {
+    return this.client.post<IProduct>(this.serverUrl,product);
   }
 
   private httpErrorHandler(err: HttpErrorResponse)

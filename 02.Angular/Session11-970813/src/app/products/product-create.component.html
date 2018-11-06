@@ -1,0 +1,23 @@
+<div class="row form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-md-3">نام محصول</label>
+    <div class="col-md-9">
+      <input type="text" class="form-control" [(ngModel)] = "product.productName"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-3">قیمت محصول</label>
+    <div class="col-md-9">
+      <input type="text" class="form-control" [(ngModel)] = "product.price"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-3">امتیاز محصول</label>
+    <div class="col-md-9">
+      <input type="text" class="form-control" [(ngModel)] = "product.starRating"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success btn-sm pull-left" (click)="submitProduct()">ثبت</button>
+  </div>
+</div>

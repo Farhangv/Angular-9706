@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { ProductService } from '../services/product.service';
 import { ProductDetailGuard } from '../shared/guards/product-detail.guard';
+import { ProductCreateComponent } from './product-create.component';
+
 
 @NgModule({
   imports: [
@@ -20,7 +22,8 @@ import { ProductDetailGuard } from '../shared/guards/product-detail.guard';
   ],
   declarations: [
     ProductDetailsComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductCreateComponent
   ],
   providers:[ProductService,ProductDetailGuard]
 })
